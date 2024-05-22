@@ -1,4 +1,6 @@
 rootProject.name = 'User-Managment'
 include 'user-management'
 include 'common'
-include 'common-security'
+include 'security'
+
+

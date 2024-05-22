@@ -1,4 +1,4 @@
-package org.example.config;
+package az.auth.config;
 
 
 import jakarta.servlet.ServletException;

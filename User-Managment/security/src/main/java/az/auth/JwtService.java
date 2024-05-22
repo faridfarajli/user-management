@@ -1,19 +1,20 @@
-package org.example;
+package az.auth;
 
-import org.example.config.JwtTokenConfigProperties;
-import org.example.dto.UserDto;
+import az.auth.config.JwtTokenConfigProperties;
+import az.auth.dto.UserDto;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtBuilder;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
+import io.micrometer.common.util.StringUtils;
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
-import org.junit.platform.commons.util.StringUtils;
 import org.modelmapper.ModelMapper;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.security.Key;
@@ -22,7 +23,7 @@ import java.time.Instant;
 import java.util.Date;
 import java.util.Map;
 
-@Service
+@Component
 @RequiredArgsConstructor
 public class JwtService {
 

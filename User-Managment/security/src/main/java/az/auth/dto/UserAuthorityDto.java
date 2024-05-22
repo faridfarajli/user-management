@@ -1,4 +1,4 @@
-package org.example.dto;
+package az.auth.dto;
 
 
 import lombok.Data;

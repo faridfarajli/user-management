@@ -1,4 +1,4 @@
-package org.example.config;
+package az.auth.config;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.config.annotation.SecurityConfigurerAdapter;

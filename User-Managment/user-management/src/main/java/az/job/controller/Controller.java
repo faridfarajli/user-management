@@ -1,6 +1,8 @@
 package az.job.controller;
 
 
+import az.auth.JwtService;
+import az.auth.config.JwtAuthRequestFilter;
 import az.job.dto.CompanyDto;
 import az.job.dto.LoginDto;
 import az.job.dto.LoginResponse;
@@ -11,8 +13,6 @@ import az.job.service.CompanyService;
 import az.job.service.UserService;
 
 import lombok.RequiredArgsConstructor;
-import org.example.JwtService;
-import org.example.config.JwtAuthRequestFilter;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -31,6 +31,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequiredArgsConstructor
 public class Controller {
+
+
     private final UserService userService;
     private final CompanyService companyService;
     private final AuthenticationManagerBuilder authenticationManagerBuilder;
